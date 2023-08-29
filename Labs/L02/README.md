@@ -21,5 +21,7 @@ task#5 <br>
 ![task5](https://github.com/muhammad1234-max/PfFall23/assets/75746019/3ad5ef6d-0dc5-4870-b085-e455a8693b12) <br> 
 ![task5(1)](https://github.com/muhammad1234-max/PfFall23/assets/75746019/c8878464-d0ab-4e88-bc60-32bc9c3d6423) <br> 
 
-task#6
+task#6 <br>
+![task6](https://github.com/muhammad1234-max/PfFall23/assets/75746019/e80edefb-1bed-46b3-a70c-7a18151a9f35)
+
 task#7
