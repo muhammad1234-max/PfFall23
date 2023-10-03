@@ -13,7 +13,7 @@ int main() {
 
     printf("Fibonacci series up to 10000:\n");
     printf("%d %d ", num1, num2);
-
+// printing the series
     for (nextTerm = num1 + num2; nextTerm <= 10000;) {
         printf("%d ", nextTerm);
         num1 = num2;
@@ -21,7 +21,7 @@ int main() {
         nextTerm = num1 + num2;
     }
 
-
+// calculating the sum of the numbers
     num1 = 1;
     num2 = 1;
     nextTerm = num1 + num2;
