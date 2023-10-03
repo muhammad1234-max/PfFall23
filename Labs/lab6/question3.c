@@ -2,13 +2,11 @@
 
 int main() {
     int num1, num2, LCM = 1, GCD = 1, f = 2; 
-
+//f is intialized to 2 as its the smallest possible factor
     printf("Enter num1: ");
     scanf("%d", &num1);
-
     printf("Enter num2: ");
     scanf("%d", &num2);
-
     // Calculate GCD
     while (f <= num1 && f <= num2) {
         if (num1 % f == 0 && num2 % f == 0) {
@@ -19,7 +17,6 @@ int main() {
             f++;
         }
     }
-
     // Calculate LCM
     LCM = (num1 * num2 * GCD);
 
