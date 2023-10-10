@@ -28,3 +28,5 @@ main() {
 		sum = sum+dig;
 	}
 	//print the sum
+        printf("%d",sum);
+}
