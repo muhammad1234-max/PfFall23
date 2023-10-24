@@ -20,7 +20,7 @@ main() {
 	//an array to store password
     char password[100];
     //array to store correct password
-    char correctpassword[]="correctanswer";
+    char correctpassword[]="Secure123";
     
     //enter the password
     printf("Enter the password: ");
