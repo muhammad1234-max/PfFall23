@@ -16,25 +16,30 @@ Date: 24/10/23
 #include <stdio.h>
 #include <string.h>
 
-main() {
-	//an array to store password
+int main() {  
     char password[100];
-    //array to store correct password
-    char correctpassword[]="Secure123";
-    
-    //enter the password
+    char correctpassword[] = "Secure123";
+
     printf("Enter the password: ");
     fgets(password, sizeof(password), stdin);
+
+    // Remove the newline character from the input.
+    size_t len = strlen(password);
+    if (len > 0 && password[len - 1] == '\n') {
+        password[len - 1] = '\0';
+    }
     
-    
-    if(/*this is used to compare the length*/strlen(password)>=8) {
-    	if(/*this function will check if both the strings lexigraphically*/strcmp(password,correctpassword)==1) {
-    		printf("correct password login successfully");
-		} else {
-			printf("incorrect password login failed");
-		}
-	} else {
-		printf("the length is incorrect");
-	}
-    
+    //strlen will check the length
+    if (strlen(password) >= 8) {
+    	//strcmp will check if both the password are equal
+        if (strcmp(password, correctpassword) == 0) {
+            printf("Login successful. Welcome!\n");
+        } else {
+            printf("Login failed. Incorrect password.\n");
+        }
+    } else {
+        printf("Password length is incorrect. It should be at least 8 characters.\n");
+    }
+
+    return 0;
 }
