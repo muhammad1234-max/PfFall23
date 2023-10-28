@@ -1,3 +1,9 @@
+/*name: Muhammad Abbas
+ID= 23k-0068
+description: A program for a airport system to check for flight availabilty and ticket prices with 4 main functionalities
+date: 26/10/23
+*/
+
 #include <stdio.h>
 
 int main() {
