@@ -34,17 +34,18 @@ main() {
     
     //printing the addresses and values
 	printf("\nAddresses and values in charArray:\n");
+	char *num;
     for ( i = 0; i < n; i++) {
-        printf("Address: %p, Value: %c\n", (void*)&arr1[i], arr1[i]);
+        printf("Address: %p, Value: %c\n", (arr1+i), *(arr1+i));
     }	
     
     printf("\nAddresses and values in intArray:\n");
     for ( i = 0; i < n; i++) {
-        printf("Address: %p, Value: %d\n", (void*)&arr2[i], arr2[i]);
+        printf("Address: %p, Value: %d\n", arr2+i, *(arr2+i));
     }
 
     printf("\nAddresses and values in longLongIntArray:\n");
     for ( i = 0; i < n; i++) {
-        printf("Address: %p, Value: %lld\n", (void*)&arr3[i], arr3[i]);
+        printf("Address: %p, Value: %lld\n", arr3+i, *arr3+i);
     }
 }
